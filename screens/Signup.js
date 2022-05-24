@@ -21,7 +21,7 @@ export default function Signup({ navigation }) {
     if (email !== "" && password !== "") {
       createUserWithEmailAndPassword(auth, email, password)
         .then(() => console.log("Signup success"))
-        .catch((err) => alert("Login error", err.message));
+        .catch((err) => alert(err.message));
     }
   };
 
